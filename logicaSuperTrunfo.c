@@ -101,13 +101,36 @@ printf("Poder da Carta 2: %.2f\n", poder2);
 //Comparação de cartas
 printf("\nBatalha de Cartas\n");
 
-if(populacao1=populacao2){
+if(populacao1>populacao2){
     printf("Carta 1 venceu!\n");
 }else{
     printf("Carta 2 venceu!\n");
 }
 
-if (area1=area2) {    
+if (area1>area2) {    
+    printf("Carta 1 venceu!\n");
+}else{
+    printf("Carta 2 venceu!\n");
+}
+
+if (pib1>pib2) {    
+    printf("Carta 1 venceu!\n");
+}else{
+    printf("Carta 2 venceu!\n");
+}
+
+if (pontos1>pontos2) {    
+    printf("Carta 1 venceu!\n");
+}else{
+    printf("Carta 2 venceu!\n");
+}
+  
+if (densidade1>densidade2) {    
+    printf("Carta 1 venceu!\n");
+}else{
+    printf("Carta 2 venceu!\n");
+}
+if (percapita1>percapita2) {    
     printf("Carta 1 venceu!\n");
 }else{
     printf("Carta 2 venceu!\n");
