@@ -108,8 +108,10 @@ if(populacao1=populacao2){
 }
 
 if (area1=area2) {    
-    printf("Carta1 venceu!\n");
+    printf("Carta 1 venceu!\n");
 }else{
-    printf("Carta2 venceu!\n");
+    printf("Carta 2 venceu!\n");
 }
 
+return 0;
+}
