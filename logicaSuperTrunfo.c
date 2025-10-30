@@ -15,10 +15,10 @@ float arearesult, pibresult, densidaderesult, percapitaresult, poderresult;
 int pontosresult, atributo;
 
 
-printf("/n*** Jogo Super Trunfo ***/n");
+printf("\n*** Jogo Super Trunfo ***\n");
 
 //Entrada dados carta 1
-printf("Digite Dados da Carta 1 \n");
+printf("\nDigite Dados da Carta 1 \n");
 
 printf("País: ");
 scanf("%s", pais1);
@@ -78,13 +78,13 @@ percapita2 = pib2/populacao2;
 poder2 = populacao2 + area2 + pib2 + pontos2 + percapita2 +1/densidade2;
 
 //Escolha do Atributo
-printf("Por favor, escolha um atributo.");
-printf("1. População/n");
-printf("2. Área/n");
-printf("3. Pib/n");
-printf("4. Pontos Turísticos/n");
-printf("5. Densidade/n");
-printf("6. Pib Per Capita");
+printf("\nPor favor, escolha um atributo.\n");
+printf("1. População\n");
+printf("2. Área\n");
+printf("3. Pib\n");
+printf("4. Pontos Turísticos\n");
+printf("5. Densidade\n");
+printf("6. Pib Per Capita\n");
 scanf("%d", &atributo);
 
 
@@ -93,7 +93,7 @@ printf("\n*** Batalha de Cartas ***\n");
 
 switch (atributo){
 case 1:
-  printf("População /n");
+  printf("População \n");
   if(populacao1>populacao2){
     printf("População: Carta 1 venceu!\n");
 }else{
@@ -102,7 +102,7 @@ case 1:
   break;
   
 case 2:
-  printf("Área /n");
+  printf("Área \n");
 if (area1>area2) {    
     printf("Área: Carta 1 venceu!\n");
 }else{
@@ -111,7 +111,7 @@ if (area1>area2) {
   break;
   
 case 3:
-  printf("Pib /n");
+  printf("Pib \n");
 if (pib1>pib2) {    
     printf("Pib: Carta 1 venceu!\n");
 }else{
@@ -120,7 +120,7 @@ if (pib1>pib2) {
   break;
   
 case 4:
-  printf("Pontos Turísticos /n");
+  printf("Pontos Turísticos \n");
 if (pontos1>pontos2) {    
     printf("Pontos Turísticos: Carta 1 venceu!\n");
 }else{
@@ -129,7 +129,7 @@ if (pontos1>pontos2) {
   break;
   
 case 5:
-  printf("Densidade /n");
+  printf("Densidade \n");
 if (densidade1>densidade2) {    
     printf("Densidade: Carta 2 venceu!\n");
 }else{
@@ -138,14 +138,14 @@ if (densidade1>densidade2) {
   break;
   
 case 6:
-  printf("Pib Per Capita/n");
+  printf("Pib Per Capita\n");
 if (percapita1>percapita2) {    
     printf("Pib Per Capita: Carta 1 venceu!\n");
 }else{
     printf("Pib Per Capita: Carta 2 venceu!\n");
 }
 default:
-  printf("Opção Inválida/n");
+  printf("Opção Inválida\n");
 break;
 }
 
