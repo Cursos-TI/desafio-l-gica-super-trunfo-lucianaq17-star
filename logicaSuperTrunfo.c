@@ -91,9 +91,8 @@ scanf("%d", &atributo);
 //Comparação de cartas
 printf("\n*** Batalha de Cartas ***\n");
 
-switch (atributo)
-{
-Case 1:
+switch (atributo){
+case 1:
   printf("População /n");
   if(populacao1>populacao2){
     printf("População: Carta 1 venceu!\n");
@@ -102,7 +101,7 @@ Case 1:
 }
   break;
   
-Case 2:
+case 2:
   printf("Área /n");
 if (area1>area2) {    
     printf("Área: Carta 1 venceu!\n");
@@ -111,7 +110,7 @@ if (area1>area2) {
 }
   break;
   
-Case 3:
+case 3:
   printf("Pib /n");
 if (pib1>pib2) {    
     printf("Pib: Carta 1 venceu!\n");
@@ -120,7 +119,7 @@ if (pib1>pib2) {
 }
   break;
   
-Case 4:
+case 4:
   printf("Pontos Turísticos /n");
 if (pontos1>pontos2) {    
     printf("Pontos Turísticos: Carta 1 venceu!\n");
@@ -129,7 +128,7 @@ if (pontos1>pontos2) {
 }
   break;
   
-Case 5:
+case 5:
   printf("Densidade /n");
 if (densidade1>densidade2) {    
     printf("Densidade: Carta 2 venceu!\n");
@@ -138,7 +137,7 @@ if (densidade1>densidade2) {
 }
   break;
   
-Case 6:
+case 6:
   printf("Pib Per Capita/n");
 if (percapita1>percapita2) {    
     printf("Pib Per Capita: Carta 1 venceu!\n");
@@ -149,8 +148,6 @@ default:
   printf("Opção Inválida/n");
 break;
 }
-
-
 
 
 
