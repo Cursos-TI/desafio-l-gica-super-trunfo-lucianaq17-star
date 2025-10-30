@@ -71,12 +71,13 @@ scanf("%d", &pontos2);
 densidade1 = populacao1/area1;
 percapita1 = pib1/populacao1;
 poder1 = populacao1 + area1 + pib1 + pontos1 + percapita1 + 1/densidade1;
-
+atributo1 = atributo
 
 //Cálculos Carta 2
 densidade2 = populacao2/area2;
 percapita2 = pib2/populacao2;
 poder2 = populacao2 + area2 + pib2 + pontos2 + percapita2 +1/densidade2;
+atributo2 = atributo
 
 //Escolha do Atributo
 printf("Por favor, escolha um atributo.");
@@ -85,32 +86,74 @@ printf("2. Área/n");
 printf("3. Pib/n");
 printf("4. Pontos Turísticos/n");
 printf("5. Densidade/n");
+printf("6. Pib Per Capita");
 scanf("%d", &atributo);
 
 
+//Comparação de cartas
+printf("\n*** Batalha de Cartas ***\n");
 
 switch (atributo)
 {
 Case 1:
   printf("População /n");
-  
+  if(populacao1>populacao2){
+    printf("População: Carta 1 venceu!\n");
+}else{
+    printf("População: Carta 2 venceu!\n");
+}
   break;
+  
 Case 2:
   printf("Área /n");
+if (area1>area2) {    
+    printf("Área: Carta 1 venceu!\n");
+}else{
+    printf("Área: Carta 2 venceu!\n");
+}
   break;
+  
 Case 3:
   printf("Pib /n");
+if (pib1>pib2) {    
+    printf("Pib: Carta 1 venceu!\n");
+}else{
+    printf("Pib: Carta 2 venceu!\n");
+}
   break;
+  
 Case 4:
   printf("Pontos Turísticos /n");
+if (pontos1>pontos2) {    
+    printf("Pontos Turísticos: Carta 1 venceu!\n");
+}else{
+    printf("Pontos Turísticos: Carta 2 venceu!\n");
+}
   break;
+  
 Case 5:
   printf("Densidade /n");
+if (densidade1>densidade2) {    
+    printf("Densidade: Carta 2 venceu!\n");
+}else{
+    printf("Densidade: Carta 1 venceu!\n");
+}
   break;
+  
+Case 6:
+  printf("Pib Per Capita/n");
+if (percapita1>percapita2) {    
+    printf("Pib Per Capita: Carta 1 venceu!\n");
+}else{
+    printf("Pib Per Capita: Carta 2 venceu!\n");
+}
 default:
   printf("Opção Inválida/n");
 break;
 }
+
+
+
 
 
 // Saída carta 1
@@ -141,48 +184,6 @@ printf("Pib Per Capita: %.2f reais\n", percapita2);
 printf("Poder da Carta 2: %.2f\n", poder2);
 
 
-//Escolha de Atributos
-
-
-
-
-//Comparação de cartas
-printf("\n*** Batalha de Cartas ***\n");
-
-if(populacao1>populacao2){
-    printf("População: Carta 1 venceu!\n");
-}else{
-    printf("População: Carta 2 venceu!\n");
-}
-
-if (area1>area2) {    
-    printf("Área: Carta 1 venceu!\n");
-}else{
-    printf("Área: Carta 2 venceu!\n");
-}
-
-if (pib1>pib2) {    
-    printf("Pib: Carta 1 venceu!\n");
-}else{
-    printf("Pib: Carta 2 venceu!\n");
-}
-
-if (pontos1>pontos2) {    
-    printf("Pontos Turísticos: Carta 1 venceu!\n");
-}else{
-    printf("Pontos Turísticos: Carta 2 venceu!\n");
-}
-  
-if (densidade1>densidade2) {    
-    printf("Densidade: Carta 2 venceu!\n");
-}else{
-    printf("Densidade: Carta 1 venceu!\n");
-}
-if (percapita1>percapita2) {    
-    printf("Pib Per Capita: Carta 1 venceu!\n");
-}else{
-    printf("Pib Per Capita: Carta 2 venceu!\n");
-}
 
 return 0;
 }
