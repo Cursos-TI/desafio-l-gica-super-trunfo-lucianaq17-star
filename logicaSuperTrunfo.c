@@ -1,20 +1,27 @@
 #include <stdio.h>
+# include < stdlib.h>
+
 
 int main() {
   
-char estado1 [50], codigo1 [50],cidade1 [50], estado2[50], codigo2[50], cidade2 [50];
+//Variáveis
+
+char pais1 [50], codigo1 [50],cidade1 [50], pais2 [50], codigo2[50], cidade2 [50];
 int pontos1, pontos2;
 unsigned long int populacao1, populacao2;
 float pib1, area1, densidade1, percapita1, poder1, pib2, area2, densidade2, percapita2, poder2;
 unsigned long int populacaoresult;
 float arearesult, pibresult, densidaderesult, percapitaresult, poderresult;
-int pontosresult;
+int pontosresult, atributo;
+
+
+printf("/n*** Jogo Super Trunfo ***/n");
 
 //Entrada dados carta 1
 printf("Digite Dados da Carta 1 \n");
 
-printf("Estado: ");
-scanf("%s", estado1);
+printf("País: ");
+scanf("%s", pais1);
 
 printf("Cidade: ");
 scanf("%s",cidade1);
@@ -38,8 +45,8 @@ scanf("%d", &pontos1);
 //Entrada dados carta 2
 printf("\nDigite Dados da Carta 2 \n");
 
-printf("Estado: ");
-scanf("%s", estado2);
+printf("País: ");
+scanf("%s", pais2);
 
 printf("Cidade: ");
 scanf("%s",cidade2);
@@ -71,9 +78,20 @@ densidade2 = populacao2/area2;
 percapita2 = pib2/populacao2;
 poder2 = populacao2 + area2 + pib2 + pontos2 + percapita2 +1/densidade2;
 
+//Escolha do Atributo
+printf("Por favor, escolha um atributo.");
+printf("1. População/n");
+printf("2. Área/n");
+printf("3. Pib/n");
+printf("4. Pontos Turísticos/n");
+printf("5. Densidade/n");
+scanf("%d", &atributo);
+
+
+
 // Saída carta 1
 printf("\nResultado da Carta 1 \n");
-printf("Estado: %s\n", estado1);
+printf("País: %s\n", pais1);
 printf("Cidade: %s\n", cidade1);
 printf("Código: %s\n", codigo1);
 printf("População: %d\n", populacao1);
@@ -87,7 +105,7 @@ printf("Poder da Carta 1: %.2f\n", poder1);
 
 //Saída carta 2
 printf("\nResultado da Carta 2 \n");
-printf("Estado: %s\n", estado2);
+printf("País: %s\n", pais2);
 printf("Cidade: %s\n",cidade2);
 printf("Código: %s\n", codigo2);
 printf("População: %d\n", populacao2);
@@ -98,8 +116,14 @@ printf("Densidade: %.2f hab/Km2\n", densidade2);
 printf("Pib Per Capita: %.2f reais\n", percapita2);
 printf("Poder da Carta 2: %.2f\n", poder2);
 
+
+//Escolha de Atributos
+
+
+
+
 //Comparação de cartas
-printf("\nBatalha de Cartas\n");
+printf("\n*** Batalha de Cartas ***\n");
 
 if(populacao1>populacao2){
     printf("População: Carta 1 venceu!\n");
