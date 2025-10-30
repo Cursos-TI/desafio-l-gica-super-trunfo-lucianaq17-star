@@ -1,5 +1,5 @@
 #include <stdio.h>
-# include < stdlib.h>
+
 
 
 int main() {
@@ -71,13 +71,11 @@ scanf("%d", &pontos2);
 densidade1 = populacao1/area1;
 percapita1 = pib1/populacao1;
 poder1 = populacao1 + area1 + pib1 + pontos1 + percapita1 + 1/densidade1;
-atributo1 = atributo
 
 //Cálculos Carta 2
 densidade2 = populacao2/area2;
 percapita2 = pib2/populacao2;
 poder2 = populacao2 + area2 + pib2 + pontos2 + percapita2 +1/densidade2;
-atributo2 = atributo
 
 //Escolha do Atributo
 printf("Por favor, escolha um atributo.");
