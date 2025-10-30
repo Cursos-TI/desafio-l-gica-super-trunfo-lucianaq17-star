@@ -89,6 +89,30 @@ scanf("%d", &atributo);
 
 
 
+switch (atributo)
+{
+Case 1:
+  printf("População /n");
+  
+  break;
+Case 2:
+  printf("Área /n");
+  break;
+Case 3:
+  printf("Pib /n");
+  break;
+Case 4:
+  printf("Pontos Turísticos /n");
+  break;
+Case 5:
+  printf("Densidade /n");
+  break;
+default:
+  printf("Opção Inválida/n");
+break;
+}
+
+
 // Saída carta 1
 printf("\nResultado da Carta 1 \n");
 printf("País: %s\n", pais1);
