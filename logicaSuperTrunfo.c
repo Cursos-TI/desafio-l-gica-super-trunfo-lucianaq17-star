@@ -5,7 +5,6 @@
 int main() {
   
 //Variáveis
-
 char pais1 [50], pais2 [50];
 int pontos1, pontos2;
 unsigned long int populacao1, populacao2;
@@ -22,7 +21,6 @@ printf("\nDigite Dados da Carta 1 \n");
 
 printf("País: ");
 scanf("%s", pais1);
-
 
 printf("População: ");
 scanf("%lu", &populacao1);
@@ -89,7 +87,7 @@ case 1:
     printf("População: Carta 2 venceu!\n");
 }
   break;
-  
+
 case 2:
   printf("Área \n");
 if (area1>area2) {    
@@ -134,7 +132,10 @@ if (percapita1>percapita2) {
     printf("Pib Per Capita: Carta 2 venceu!\n");
 }
 
-
+default:
+  printf("Opção Inválida\n");
+break;
+}
 
 // Saída carta 1
 printf("\nResultado da Carta 1 \n");
@@ -158,12 +159,6 @@ printf("Pontos Turísticos: %d\n", pontos2);
 printf("Densidade: %.2f hab/Km2\n", densidade2);
 printf("Pib Per Capita: %.2f reais\n", percapita2);
 printf("Poder da Carta 2: %.2f\n", poder2);
-
-default:
-  printf("Opção Inválida\n");
-break;
-}
-
 
 
 return 0;
